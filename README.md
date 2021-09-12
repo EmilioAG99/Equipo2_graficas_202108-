@@ -11,16 +11,16 @@ Esta propuesta de proyecto contempla qué los usuarios puedan visualizar, en un 
 
 Ejemplo 1: https://www.harp.gl/
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img1.png">
 </p>
 
 Ejemplo 2: https://www.safe.com/blog/2018/08/bring-2d-data-cesiumjs/ 
 
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img2.png">
 </p>
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img3.png">
 </p>  
 
 Video: https://videohive.net/item/3d-route-map/24720359 
@@ -31,13 +31,13 @@ El proyecto consistirá en desarrollar un mapa 3D interactivo que permita a los 
 Ejemplos: Chartogne Taillet: https://chartogne-taillet.com/en
 
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img4.png">
 </p> 
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img5.png">
 </p>  
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img6.png">
 </p>
 
 
@@ -45,13 +45,13 @@ Ejemplos: Chartogne Taillet: https://chartogne-taillet.com/en
 Para este proyecto se espera que el usuario pueda completar un circuito creado dinámicamente donde se encontrará con obstáculos que impedirán que el jugador pueda avanzar o disminuya su velocidad. Al iniciar el juego el usuario podrá seleccionar el color del vehículo, así como las llantas que desee utilizar en su vehículo. Las llantas cuentan con distintas propiedades que harán que los vehículos se comporten de manera distinta en la pista, esto puede afectar el agarre, velocidad o tiempo de vida de las llantas. De igual forma el jugador se encontrará con distintos powerups que podrán dar cierta ventaja (boost, vida extra o agregar carriles laterales). 
 El objetivo del juego es completar un circuito sin caerte de la pista en el menor tiempo posible, si el jugador llega a caerse de la pista perderá una vida e iniciará en el punto guardado antes de caerse. En cada carrera se mostrará el tiempo que tiene que vencer con base en su mejor tiempo previo y se tendrá un indicador de cuánto tiempo ha transcurrido desde el inicio de la carrera.  
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img7.png">
 </p>
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img8.png">
 </p>
 <p align="center">
-  <img width="460" height="300" src="">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img9.png">
 </p>
 
 [Ejemplo 1](https://www.youtube.com/watch?v=se-oorr2zM8&ab_channel=bkcore)  
