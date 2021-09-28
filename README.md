@@ -1,59 +1,72 @@
 # Equipo2_graficas_202108
-Propuestas para proyecto Final de materia Gráficas Computacionales
+# Descripción de Requerimientos y Aspectos a ser incluidos en Map Generator
 
 ## Integrantes
 Andrés Barragán Salas - *A01026567*  
 Luis Emilio Alcántara Guzman - *A01027304*  
 Esteban Manrique de Lara Sirvent - *A01027077*  
 
-## Propuesta 1 (Representación 3D de rutas en un mapa)
-Esta propuesta de proyecto contempla qué los usuarios puedan visualizar, en un mapa 3D y con relieve de las diferentes edificaciones y construcciones en el mismo, las rutas más rápidas qué podrían tomar para llegar de un punto “A” (origen) a un punto “B” (destino). La ruta aparecerá en el mapa también en tres dimensiones; la línea que desplegará el trayecto podrá ser configurada en términos de color, grosor y también en cuanto al patrón visual de la misma. Adicionalmente, sería interesante que se pudiera hacer un recorrido, desde el POV de un automóvil dentro de la ciudad, del trayecto entre ambos puntos designados. El mapa no se limitará a sólo una región de una ciudad; nuestra intención es poder desplegar la representación en tres dimensiones de diferentes zonas y ciudades y calcular las rutas en éstas. De esta manera, se busca crear una aplicación funcional en el día a día de las personas con un valor estético agregado a alternativas que sirven para funciones similares hoy en día.
+## Proyecto a realizar
 
-Ejemplo 1: https://www.harp.gl/
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img1.png">
-</p>
+El proyecto consistirá en desarrollar un mapa 3D interactivo que permita a los usuarios explorar partes del mapa haciendo “drag-and-drop” y hacer clicks en lugares en especifico para ver detalles de las ubicaciones. El estilo de dibujo aplicado al mapa será parecido a aquel de un dibujo hecho a lápiz, utilizará componentes que se repetirán dependiendo el tipo de zona, por ejemplo, árboles, casas, edificios, sembradíos, entre otros, todo lo anterior con un estilo medieval. Entre las posibles aplicaciones de este proyecto puede ser la aplicación interactiva en los juegos de rol como lo puede ser Dungeons & Dragons, de manera que esta herramienta ayude a los jugadores a visualizar el escenario en el que se encuentran. Atendiendo a lo anterior, una funcionalidad adicional a la cual se podría apuntar con el proyecto es un modo “creación” que proporcione a los usuarios la opción de generar un mapa desde cero haciendo uso de los componentes existentes o incluso la generación de mapas aleatorios y/o dinámicos.
 
-Ejemplo 2: https://www.safe.com/blog/2018/08/bring-2d-data-cesiumjs/ 
-
+## Características del proyecto  
+### Flujo de la aplicación  
 <p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img2.png">
-</p>
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img3.png">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/flujo.png">
 </p>  
+El usuario será presentado con una pantalla principal al ingresar a la aplicación, en ella se mostrará un menú con las siguientes opciones: “Nuevo mapa”, “Abrir un mapa” y “Ajustes”. Cuando el usuario elija la opción de abrir un nuevo mapa entonces se le preguntará si desea generar un nuevo mapa aleatoriamente o crear uno desde cero. Cada una de las opciones anteriores redirigirá a una vista diferente, ya sea a un modo exploración o un modo de creación de un mapa. Al intentar abrir un mapa, el usuario podrá acceder a los mapas creados localmente (en el mismo ordenador) o la opción de subir un archivo de texto para obtener otro mapa. Por último, al acceder a los ajustes de la página, los usuarios podrán acceder a la miscelánea del proyecto, incluyendo los créditos y opciones de video y audio.  
 
-Video: https://videohive.net/item/3d-route-map/24720359 
-
-## Propuesta 2 (Mapa para historia estilo D&D)
-El proyecto consistirá en desarrollar un mapa 3D interactivo que permita a los usuarios explorar partes del mapa haciendo “drag-and-drop” y hacer clicks en lugares en especifico para ver detalles de las ubicaciones. El estilo de dibujo aplicado al mapa será parecido a aquel de un dibujo hecho a lápiz, utilizará componentes que se repetirán dependiendo el tipo de zona, por ejemplo, árboles, casas, edificios, sembradíos, entre otros, todo lo anterior con un estilo medieval. Entre las posibles aplicaciones de este proyecto puede ser la aplicación interactiva en los juegos de rol como lo puede ser Dungeons & Dragons, de manera que esta herramienta ayude a los jugadores a visualizar el escenario en el que se encuentran. Atendiendo a lo anterior, una funcionalidad adicional a la cual se podría apuntar con el proyecto es un modo “creación” que proporcione a los usuarios la opción de generar un mapa desde cero haciendo uso de los componentes existentes o incluso la generación de mapas aleatorios y/o dinámicos. 
-
-Ejemplos: Chartogne Taillet: https://chartogne-taillet.com/en
+### Tiles
+<p align="center">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/tiles.png">
+</p>
+Cada una de los tiles/casillas de los mapas tendrán forma de hexágono. De esta manera, cada uno de ellos estará directamente a otros seis hexágonos distintos, permitiendo que el movimiento a lo largo del tablero sea sencillo y rápido para el usuario. Asimismo, con este diseño en mente, se podrá configurar de manera más detallada condiciones en la generación de biomas y conjuntos de tiles en el tablero; similar a lo presentado en juegos como Civilization 6 o Age of Empires, habrá condiciones en la generación de los mapas para evitar qué biomas/personajes opuestos y contradictorios queden juntos. Debido a la naturaleza del proyecto, no se podrá aplicar la otra gran ventaja de tableros compuestos por hexágonos: bonificaciones/mejoras por adyacencia entre los hexágonos.  
 
 <p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img4.png">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/Civ6.png">
+</p>  
+En cuanto a la vista/cámara qué el usuario, se espera que tenga un ángulo de inclinación de 45°, como en la imagen proporcionada como ejemplo. De esta manera, no se tiene una perspectiva de “ojo de Dios”, que evitaría qué el usuario pudiera percibir los diferentes detalles de personajes, estructuras y paisajes en el mapa.  
+
+Listado de elementos en los Tiles a ser encontrados:  
+* Biomas:
+  * Bosque (árboles, pasto, casas)
+  * Ríos (puentes para cruzar)
+  * Sembradíos (casas, tiendas, cosechas, pasto alto, aldeanos)
+  * Lago (patitos de hule)
+  * Pantano (cocodrilos, orcos)
+  * Desierto (iguanas, pirámides)
+  * Planicies (castillos y fortalezas)
+* Personajes:  
+  * Aldeanos
+  * Duendes
+  * Dragones
+  * Caballeros
+  * Hechizeros
+  * Orcos
+  * Lobos
+  * Patitos de hule
+  * Cocodrilos
+  * Iguana
+* Estructuras
+  * Casas
+  * Castillos
+  * Tiendas
+  * Fortaleza
+  * Puente
+  * Pirámides  
+
+<p align="center">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/mapa.png">
 </p> 
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img5.png">
-</p>  
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img6.png">
-</p>
+
+## Generación de mapas  
+La opción de la aplicación para generar nuevos mapas será conformada por las siguientes dos opciones:  
+* Modo creación de mapa: los usuarios tendrán la posibilidad de acceder a un modo creación para la generación de un nuevo mapa. En se presentará al usuario con un mapa vacío en donde se mostrarán los tiles (o hexágonos) en blanco y la opción para seleccionar uno o varios de ellos para posteriormente ser poblados con un tipo de tile disponible en el juego. 
+* Generación aleatoria: la otra opción presentada al usuario será la generación de un mapa aleatorio. En ella un algoritmo se encargará de la generación automática y distribuida del mapa, únicamente redirigiendo al usuario directamente al modo de exploración de un mapa.
+
+### Almacenamiento de mapas  
+Los mapas generados ya sean de manera aleatoria o en el modo creador podrán ser guardados para posteriormente ser reusados. Los mapas podrán ser guardados en el local storage para que en otro momento se pueda seleccionar y que sea cargado o puede ser guardado en un archivo de texto que posteriormente puede ser importado y se generará todo lo que se tenía hasta el momento de la exportación del mapa. Una vez que se haya cargado el mapa de cualquiera de los dos métodos antes mencionados se podrá explorar el mapa como se hace al tener un inicial. 
 
 
-## Propuesta 3 (Racing game)
-Para este proyecto se espera que el usuario pueda completar un circuito creado dinámicamente donde se encontrará con obstáculos que impedirán que el jugador pueda avanzar o disminuya su velocidad. Al iniciar el juego el usuario podrá seleccionar el color del vehículo, así como las llantas que desee utilizar en su vehículo. Las llantas cuentan con distintas propiedades que harán que los vehículos se comporten de manera distinta en la pista, esto puede afectar el agarre, velocidad o tiempo de vida de las llantas. De igual forma el jugador se encontrará con distintos powerups que podrán dar cierta ventaja (boost, vida extra o agregar carriles laterales). 
-El objetivo del juego es completar un circuito sin caerte de la pista en el menor tiempo posible, si el jugador llega a caerse de la pista perderá una vida e iniciará en el punto guardado antes de caerse. En cada carrera se mostrará el tiempo que tiene que vencer con base en su mejor tiempo previo y se tendrá un indicador de cuánto tiempo ha transcurrido desde el inicio de la carrera.  
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img7.png">
-</p>
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img8.png">
-</p>
-<p align="center">
-  <img width="600" height="300" src="https://raw.githubusercontent.com/EmilioAG99/Equipo2_graficas_202108-/main/images/img9.png">
-</p>
 
-[Ejemplo 1](https://www.youtube.com/watch?v=se-oorr2zM8&ab_channel=bkcore)  
-[Ejemplo 2](http://hexgl.bkcore.com/)  
-[Ejemplo 3](http://triggerrally.com/)       
