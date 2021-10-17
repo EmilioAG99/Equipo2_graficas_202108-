@@ -32,7 +32,7 @@ Listado de elementos en los Tiles a ser encontrados:
 * Biomas:
   * Bosque (árboles, pasto, casas)
   * Ríos (puentes para cruzar)
-  * Sembradíos (casas, tiendas, cosechas, pasto alto, aldeanos)
+  * Sembradíos (casas, tiendas, cosechas, aldeanos)
   * Lago (patitos de hule)
   * Pantano (cocodrilos, orcos)
   * Desierto (iguanas, pirámides)
