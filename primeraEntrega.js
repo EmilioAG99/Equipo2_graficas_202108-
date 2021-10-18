@@ -153,6 +153,8 @@ function createScene(canvas){
     serpiente.position.z = 0
     grupoModelosPrueba.add(serpiente)
 
+   
+
     scene.add(grupoModelosPrueba)
 }
 
