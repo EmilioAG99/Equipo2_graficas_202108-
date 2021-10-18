@@ -18,6 +18,9 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/lobo/10055_Gray_Wolf_v1_L3.obj","./models/lobo/10055_Gray_Wolf_v1_L3.mtl","lobo"],
 ["./models/castillo/Hogwarts.obj", "./models/castillo/Hogwarts.mtl", "castillo"],
 ["./models/dragon/No_Eyed_Dragon_v2_by_Dommk.obj","./models/dragon/No_Eyed_Dragon_v2_by_Dommk.mtl","dragon"],
+["./models/aldeano/workermanOBJ.obj","./models/aldeano/workermanOBJ.mtl","aldeano"], 
+["./models/caballero/Caballero.obj","./models/caballero/Caballero.mtl","caballero"],
+["./models/duende/Leprechaun_Pose.obj","./models/duende/Leprechaun_Pose.mtl","duende"]
 ];
 let models = {};
 //obj, luego mtl y finalmente nombre
@@ -179,6 +182,27 @@ function createScene(canvas){
     dragon.position.z = 0 
     dragon.rotateY(Math.PI/2 )
     grupoModelosPrueba.add(dragon)
+
+    let aldeano = models["aldeano"].clone()
+    aldeano.scale.set(20,20,20)
+    aldeano.position.x = 350
+    aldeano.position.y = 35
+    aldeano.position.z = 0 
+    grupoModelosPrueba.add(aldeano)
+
+    let caballero = models["caballero"].clone()
+    caballero.scale.set(30,30,30)
+    caballero.position.x = 400
+    caballero.position.y = 20
+    caballero.position.z = 0 
+    grupoModelosPrueba.add(caballero)
+
+    let duende = models["duende"].clone()
+    duende.scale.set(0.5,0.5,0.5)
+    duende.position.x = 450
+    duende.position.y = 20
+    duende.position.z = 0 
+    grupoModelosPrueba.add(duende)
 
     scene.add(grupoModelosPrueba)
 }
