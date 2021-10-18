@@ -14,7 +14,8 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/cosechas/molino/windmill.obj", "./models/cosechas/molino/windmill.mtl", "molino"],
 ["./models/cosechas/trigo/wheat_cg_OBJ.obj", "./models/cosechas/trigo/wheat_cg_OBJ.mtl", "trigo"],
 ["./models/pato_hule/uploads_files_2662102_duck.obj", "./models/pato_hule/uploads_files_2662102_duck.mtl", "pato"],
-["./models/serpiente/13104_Scarlet_Snake_v1_l3.obj", "./models/serpiente/13104_Scarlet_Snake_v1_l3.mtl", "serpiente"]];
+["./models/serpiente/13104_Scarlet_Snake_v1_l3.obj", "./models/serpiente/13104_Scarlet_Snake_v1_l3.mtl", "serpiente"],
+["", "", ""]];
 let models = {};
 //obj, luego mtl y finalmente nombre
 
@@ -152,6 +153,14 @@ function createScene(canvas){
     serpiente.position.y = 0
     serpiente.position.z = 0
     grupoModelosPrueba.add(serpiente)
+
+    let lobo = models["lobo"].clone()
+    lobo.scale.set(1,1,1)
+    lobo.position.x = -450
+    lobo.position.y = -10
+    lobo.position.z = -2
+    lobo.rotateX (-Math.PI/2 ) 
+    grupoModelosPrueba.add(lobo))
 
     scene.add(grupoModelosPrueba)
 }
