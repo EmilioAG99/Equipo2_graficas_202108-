@@ -15,14 +15,17 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/cosechas/trigo/wheat_cg_OBJ.obj", "./models/cosechas/trigo/wheat_cg_OBJ.mtl", "trigo"],
 ["./models/pato_hule/uploads_files_2662102_duck.obj", "./models/pato_hule/uploads_files_2662102_duck.mtl", "pato"],
 ["./models/serpiente/13104_Scarlet_Snake_v1_l3.obj", "./models/serpiente/13104_Scarlet_Snake_v1_l3.mtl", "serpiente"],
-["", "", ""]];
+["./models/lobo/10055_Gray_Wolf_v1_L3.obj","./models/lobo/10055_Gray_Wolf_v1_L3.mtl","lobo"],
+["./models/castillo/Hogwarts.obj", "./models/castillo/Hogwarts.mtl", "castillo"],
+["./models/dragon/No_Eyed_Dragon_v2_by_Dommk.obj","./models/dragon/No_Eyed_Dragon_v2_by_Dommk.mtl","dragon"],
+];
 let models = {};
 //obj, luego mtl y finalmente nombre
 
 function main() {
     cargarModelos();
     const canvas = document.getElementById("canvas");
-    setTimeout(function(){createScene(canvas);update();}, 8500);
+    setTimeout(function(){createScene(canvas);update();}, 10500);
 }
 
 function animate(){
@@ -160,7 +163,22 @@ function createScene(canvas){
     lobo.position.y = -10
     lobo.position.z = -2
     lobo.rotateX (-Math.PI/2 ) 
-    grupoModelosPrueba.add(lobo))
+    grupoModelosPrueba.add(lobo)
+
+    let castillo = models["castillo"].clone()
+    castillo.scale.set(.3,.3,.3)
+    castillo.position.x = 100
+    castillo.position.y = 0
+    castillo.position.z = 0 
+    grupoModelosPrueba.add(castillo)
+
+    let dragon = models["dragon"].clone()
+    dragon.scale.set(.1,.1,.1)
+    dragon.position.x = 240
+    dragon.position.y = 0
+    dragon.position.z = 0 
+    dragon.rotateY(Math.PI/2 )
+    grupoModelosPrueba.add(dragon)
 
     scene.add(grupoModelosPrueba)
 }

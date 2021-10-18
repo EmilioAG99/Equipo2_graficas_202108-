@@ -1,0 +1,70 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 27.11.2012 16:21:29
+
+newmtl Towels
+	Ns 9.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6570 0.6570 0.6570
+	Ke 0.0000 0.0000 0.0000
+	map_Ka brick_diffuse.jpg
+	map_Kd brick_diffuse.jpg
+
+newmtl Coronets
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka square_tiles_yellow_diffuse.jpg
+	map_Kd square_tiles_yellow_diffuse.jpg
+
+newmtl Sticks
+	Ns 10.0000
+	Ni 1.5000
+	d 0.8500
+	Tr 0.1500
+	Tf 0.8500 0.8500 0.8500 
+	illum 2
+	Ka 0.8902 0.8941 0.4471
+	Kd 0.8902 0.8941 0.4471
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.8902 0.8941 0.4471
+
+newmtl Walls
+	Ns 17.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.8280 0.8280 0.8280
+	Ke 0.0000 0.0000 0.0000
+	map_Ka brick_diffuse.jpg
+	map_Kd brick_diffuse.jpg
+
+newmtl Cilindrer
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka stone_tile_black_diffuse.jpg
+	map_Kd stone_tile_black_diffuse.jpg
