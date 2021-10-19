@@ -24,15 +24,14 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/lagartija/Kertenkele.obj","./models/lagartija/Kertenkele.mtl","lagartija"],
 ["./models/torre/uploads_files_695657_castle.obj","./models/torre/uploads_files_695657_castle.mtl","torre"],
 ["./models/piramide/3d-model.obj","./models/piramide/3d-model.mtl","piramide"],
-
-];
+["./models/hechizero/model.obj", "./models/hechizero/model.mtl", "hechizero"]];
 let models = {};
 //obj, luego mtl y finalmente nombre
 
 function main() {
     cargarModelos();
     const canvas = document.getElementById("canvas");
-    setTimeout(function(){createScene(canvas);update();}, 10500);
+    setTimeout(function(){createScene(canvas);update();}, 14500);
 }
 
 function animate(){
@@ -228,6 +227,13 @@ function createScene(canvas){
     piramide.position.y = 20
     piramide.position.z = 0 
     grupoModelosPrueba.add(piramide)
+
+    let hechizero = models["hechizero"].clone()
+    hechizero.scale.set(15,15,15)
+    hechizero.position.x = 700
+    hechizero.position.y = 20
+    hechizero.position.z = 0 
+    grupoModelosPrueba.add(hechizero)
 
     scene.add(grupoModelosPrueba)
 }
