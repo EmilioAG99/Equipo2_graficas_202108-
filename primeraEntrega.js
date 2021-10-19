@@ -20,7 +20,8 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/dragon/No_Eyed_Dragon_v2_by_Dommk.obj","./models/dragon/No_Eyed_Dragon_v2_by_Dommk.mtl","dragon"],
 ["./models/aldeano/workermanOBJ.obj","./models/aldeano/workermanOBJ.mtl","aldeano"], 
 ["./models/caballero/Caballero.obj","./models/caballero/Caballero.mtl","caballero"],
-["./models/duende/Leprechaun_Pose.obj","./models/duende/Leprechaun_Pose.mtl","duende"]
+["./models/duende/Leprechaun_Pose.obj","./models/duende/Leprechaun_Pose.mtl","duende"],
+["./models/lagartija/Kertenkele.obj","./models/lagartija/Kertenkele.mtl","lagartija"]
 ];
 let models = {};
 //obj, luego mtl y finalmente nombre
@@ -203,6 +204,13 @@ function createScene(canvas){
     duende.position.y = 20
     duende.position.z = 0 
     grupoModelosPrueba.add(duende)
+
+    let lagartija = models["lagartija"].clone()
+    lagartija.scale.set(10,10,10)
+    lagartija.position.x = 500
+    lagartija.position.y = 20
+    lagartija.position.z = 0 
+    grupoModelosPrueba.add(lagartija)
 
     scene.add(grupoModelosPrueba)
 }
