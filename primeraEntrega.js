@@ -21,7 +21,10 @@ let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifol
 ["./models/aldeano/workermanOBJ.obj","./models/aldeano/workermanOBJ.mtl","aldeano"], 
 ["./models/caballero/Caballero.obj","./models/caballero/Caballero.mtl","caballero"],
 ["./models/duende/Leprechaun_Pose.obj","./models/duende/Leprechaun_Pose.mtl","duende"],
-["./models/lagartija/Kertenkele.obj","./models/lagartija/Kertenkele.mtl","lagartija"]
+["./models/lagartija/Kertenkele.obj","./models/lagartija/Kertenkele.mtl","lagartija"],
+["./models/torre/uploads_files_695657_castle.obj","./models/torre/uploads_files_695657_castle.mtl","torre"],
+["./models/piramide/3d-model.obj","./models/piramide/3d-model.mtl","piramide"],
+
 ];
 let models = {};
 //obj, luego mtl y finalmente nombre
@@ -211,6 +214,20 @@ function createScene(canvas){
     lagartija.position.y = 20
     lagartija.position.z = 0 
     grupoModelosPrueba.add(lagartija)
+
+    let torre = models["torre"].clone()
+    torre.scale.set(3,3,3)
+    torre.position.x = 550
+    torre.position.y = 20
+    torre.position.z = 0 
+    grupoModelosPrueba.add(torre)
+
+    let piramide = models["piramide"].clone()
+    piramide.scale.set(0.05,0.05,0.05)
+    piramide.position.x = 630
+    piramide.position.y = 20
+    piramide.position.z = 0 
+    grupoModelosPrueba.add(piramide)
 
     scene.add(grupoModelosPrueba)
 }
