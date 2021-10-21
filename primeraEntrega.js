@@ -122,7 +122,7 @@ function createScene(canvas){
     grupoModelosPrueba.add(puente)
 
     let tienda = models["tienda"].clone()
-    tienda.scale.set(9,9,9)
+    tienda.scale.set(10,10,10)
     tienda.position.x = -240
     tienda.position.y = -4
     tienda.position.z = 0
@@ -130,43 +130,44 @@ function createScene(canvas){
 
     let calabaza = models["calabaza"].clone()
     calabaza.scale.set(2,2,2)
-    calabaza.position.x = -295
+    calabaza.position.x = -275
     calabaza.position.y = -4
     calabaza.position.z = 0
     grupoModelosPrueba.add(calabaza)
     
     let molino = models["molino"].clone()
-    molino.scale.set(0.5,0.5,0.5)
+    molino.scale.set(1,1,1)
     molino.position.x = -320
-    molino.position.y = 0
+    molino.position.y = -4
     molino.position.z = 0
     grupoModelosPrueba.add(molino)
 
     let trigo = models["trigo"].clone()
-    trigo.scale.set(1,1,1)
-    trigo.position.x = -350
-    trigo.position.y = -10
+    trigo.scale.set(0.7,.7,.7)
+    trigo.position.x = -365
+    trigo.position.y = -4
     trigo.position.z = 0
     grupoModelosPrueba.add(trigo)
 
     let pato = models["pato"].clone()
-    pato.scale.set(.01,.01,.01)
+    pato.scale.set(.003,.003,.003)
     pato.position.x = -380
-    pato.position.y = -10
+    pato.position.y = -4
     pato.position.z = -2
     grupoModelosPrueba.add(pato)
 
     let serpiente = models["serpiente"].clone()
-    serpiente.scale.set(1,1,1)
+    serpiente.scale.set(0.5,0.5,0.5)
     serpiente.position.x = -415
-    serpiente.position.y = 0
+    serpiente.position.y = -4
     serpiente.position.z = 0
+    serpiente.rotateX(-Math.PI/2)
     grupoModelosPrueba.add(serpiente)
 
     let lobo = models["lobo"].clone()
-    lobo.scale.set(1,1,1)
+    lobo.scale.set(.1,.1,.1)
     lobo.position.x = -450
-    lobo.position.y = -10
+    lobo.position.y = -4
     lobo.position.z = -2
     lobo.rotateX (-Math.PI/2 ) 
     grupoModelosPrueba.add(lobo)
@@ -174,64 +175,64 @@ function createScene(canvas){
     let castillo = models["castillo"].clone()
     castillo.scale.set(.3,.3,.3)
     castillo.position.x = 100
-    castillo.position.y = 0
+    castillo.position.y = -4
     castillo.position.z = 0 
     grupoModelosPrueba.add(castillo)
 
     let dragon = models["dragon"].clone()
-    dragon.scale.set(.1,.1,.1)
+    dragon.scale.set(.05,.05,.05)
     dragon.position.x = 240
-    dragon.position.y = 0
+    dragon.position.y = 5
     dragon.position.z = 0 
     dragon.rotateY(Math.PI/2 )
     grupoModelosPrueba.add(dragon)
 
     let aldeano = models["aldeano"].clone()
-    aldeano.scale.set(20,20,20)
-    aldeano.position.x = 350
-    aldeano.position.y = 35
+    aldeano.scale.set(5,5,5)
+    aldeano.position.x = 30
+    aldeano.position.y = -4
     aldeano.position.z = 0 
     grupoModelosPrueba.add(aldeano)
 
     let caballero = models["caballero"].clone()
-    caballero.scale.set(30,30,30)
-    caballero.position.x = 400
-    caballero.position.y = 20
+    caballero.scale.set(7,7,7)
+    caballero.position.x = 180
+    caballero.position.y = -4
     caballero.position.z = 0 
     grupoModelosPrueba.add(caballero)
 
     let duende = models["duende"].clone()
-    duende.scale.set(0.5,0.5,0.5)
-    duende.position.x = 450
-    duende.position.y = 20
+    duende.scale.set(0.08,0.08,0.08)
+    duende.position.x = 275
+    duende.position.y = -4
     duende.position.z = 0 
     grupoModelosPrueba.add(duende)
 
     let lagartija = models["lagartija"].clone()
-    lagartija.scale.set(10,10,10)
-    lagartija.position.x = 500
-    lagartija.position.y = 20
+    lagartija.scale.set(2,2,2)
+    lagartija.position.x = 325
+    lagartija.position.y = -4
     lagartija.position.z = 0 
     grupoModelosPrueba.add(lagartija)
 
     let torre = models["torre"].clone()
-    torre.scale.set(3,3,3)
-    torre.position.x = 550
-    torre.position.y = 20
+    torre.scale.set(6,6,6)
+    torre.position.x = 410
+    torre.position.y = -8
     torre.position.z = 0 
     grupoModelosPrueba.add(torre)
 
     let piramide = models["piramide"].clone()
     piramide.scale.set(0.05,0.05,0.05)
-    piramide.position.x = 630
-    piramide.position.y = 20
+    piramide.position.x = 500
+    piramide.position.y = -4
     piramide.position.z = 0 
     grupoModelosPrueba.add(piramide)
 
     let hechizero = models["hechizero"].clone()
-    hechizero.scale.set(15,15,15)
-    hechizero.position.x = 700
-    hechizero.position.y = 20
+    hechizero.scale.set(3,3,3)
+    hechizero.position.x = 550
+    hechizero.position.y = -4
     hechizero.position.z = 0 
     grupoModelosPrueba.add(hechizero)
 
