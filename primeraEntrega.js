@@ -23,7 +23,7 @@ let modelsURL = [["./models/arbol/arbol.obj","./models/arbol/arbol.mtl", "arbol"
 ["./models/duende/duende.obj","./models/duende/duende.mtl","duende"],
 ["./models/lagartija/lagartija.obj","./models/lagartija/lagartija.mtl","lagartija"],
 ["./models/torre/torre.obj","./models/torre/torre.mtl","torre"],
-["./models/piramide/3d-model.obj","./models/piramide/3d-model.mtl","piramide"],
+["./models/piramide/piramide.obj","./models/piramide/piramide.mtl","piramide"],
 ["./models/hechizero/hechizero.obj", "./models/hechizero/hechizero.mtl", "hechizero"]];
 let models = {};
 //obj, luego mtl y finalmente nombre
