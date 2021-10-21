@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd CobblestoneColorMap.jpg
+map_Kd casa_CobblestoneColorMap.jpg
 
 newmtl Glass
 Ns 225.000000
@@ -21,10 +21,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd GlassColorMap.png
-map_Ks GlassSpecularMap.png
-map_Ns GlassRoughnessMap.png
-refl GlassMetallicMap.png
+map_Kd casa_GlassColorMap.png
+map_Ks casa_GlassSpecularMap.png
+map_Ns casa_GlassRoughnessMap.png
+refl casa_GlassMetallicMap.png
 
 newmtl Material
 Ns 323.999994
@@ -55,7 +55,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd RoofTilesColor.png
+map_Kd casa_RoofTilesColor.png
 
 newmtl Walls
 Ns 323.999994
@@ -66,7 +66,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd WallsColorMap.png
+map_Kd casa_WallsColorMap.png
 
 newmtl Wood
 Ns 323.999994
@@ -77,4 +77,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd WoodColorMap.png
+map_Kd casa_WoodColorMap.png

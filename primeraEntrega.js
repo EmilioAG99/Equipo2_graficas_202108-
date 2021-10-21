@@ -6,25 +6,25 @@ import { MTLLoader } from '../libs/three.js/r131/loaders/MTLLoader.js';
 
 let renderer = null, scene = null, camera = null; //Elementos generales de la escena
 let orbitControls = null;
-let modelsURL = [["./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifolia_2.obj","./models/arbol/uploads_files_2812132_OBJ_JA19_TsugaDiversifolia_2.mtl", "arbol"],
-["./models/casa1/House1ExportVersion.obj", "./models/casa1/House1ExportVersion.mtl", "casa1"],
-["./models/puente/Old stone bridgeOBJ.obj", "./models/puente/Old stone bridgeOBJ.mtl", "puente"],
+let modelsURL = [["./models/arbol/arbol.obj","./models/arbol/arbol.mtl", "arbol"],
+["./models/casa1/casa.obj", "./models/casa1/casa.mtl", "casa1"],
+["./models/puente/puente.obj", "./models/puente/puente.mtl", "puente"],
 ["./models/tienda/HOUSE.obj", "./models/tienda/HOUSE.mtl", "tienda"],
-["./models/cosechas/calabazas/uploads_files_2116284_pumpkin.obj", "./models/cosechas/calabazas/uploads_files_2116284_pumpkin.mtl", "calabaza"],
-["./models/cosechas/molino/windmill.obj", "./models/cosechas/molino/windmill.mtl", "molino"],
-["./models/cosechas/trigo/wheat_cg_OBJ.obj", "./models/cosechas/trigo/wheat_cg_OBJ.mtl", "trigo"],
-["./models/pato_hule/uploads_files_2662102_duck.obj", "./models/pato_hule/uploads_files_2662102_duck.mtl", "pato"],
-["./models/serpiente/13104_Scarlet_Snake_v1_l3.obj", "./models/serpiente/13104_Scarlet_Snake_v1_l3.mtl", "serpiente"],
-["./models/lobo/10055_Gray_Wolf_v1_L3.obj","./models/lobo/10055_Gray_Wolf_v1_L3.mtl","lobo"],
-["./models/castillo/Hogwarts.obj", "./models/castillo/Hogwarts.mtl", "castillo"],
-["./models/dragon/No_Eyed_Dragon_v2_by_Dommk.obj","./models/dragon/No_Eyed_Dragon_v2_by_Dommk.mtl","dragon"],
-["./models/aldeano/workermanOBJ.obj","./models/aldeano/workermanOBJ.mtl","aldeano"], 
+["./models/cosechas/calabazas/calabaza.obj", "./models/cosechas/calabazas/calabaza.mtl", "calabaza"],
+["./models/cosechas/molino/molino.obj", "./models/cosechas/molino/molino.mtl", "molino"],
+["./models/cosechas/trigo/trigo.obj", "./models/cosechas/trigo/trigo.mtl", "trigo"],
+["./models/pato_hule/pato.obj", "./models/pato_hule/pato.mtl", "pato"],
+["./models/serpiente/serpiente.obj", "./models/serpiente/serpiente.mtl", "serpiente"],
+["./models/lobo/lobo.obj","./models/lobo/lobo.mtl","lobo"],
+["./models/castillo/castillo.obj", "./models/castillo/castillo.mtl", "castillo"],
+["./models/dragon/dragon.obj","./models/dragon/dragon.mtl","dragon"],
+["./models/aldeano/aldeano.obj","./models/aldeano/aldeano.mtl","aldeano"], 
 ["./models/caballero/Caballero.obj","./models/caballero/Caballero.mtl","caballero"],
-["./models/duende/Leprechaun_Pose.obj","./models/duende/Leprechaun_Pose.mtl","duende"],
-["./models/lagartija/Kertenkele.obj","./models/lagartija/Kertenkele.mtl","lagartija"],
-["./models/torre/uploads_files_695657_castle.obj","./models/torre/uploads_files_695657_castle.mtl","torre"],
+["./models/duende/duende.obj","./models/duende/duende.mtl","duende"],
+["./models/lagartija/lagartija.obj","./models/lagartija/lagartija.mtl","lagartija"],
+["./models/torre/torre.obj","./models/torre/torre.mtl","torre"],
 ["./models/piramide/3d-model.obj","./models/piramide/3d-model.mtl","piramide"],
-["./models/hechizero/model.obj", "./models/hechizero/model.mtl", "hechizero"]];
+["./models/hechizero/hechizero.obj", "./models/hechizero/hechizero.mtl", "hechizero"]];
 let models = {};
 //obj, luego mtl y finalmente nombre
 

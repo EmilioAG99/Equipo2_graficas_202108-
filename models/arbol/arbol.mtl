@@ -12,6 +12,8 @@ newmtl Bark01_SHD
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
+	map_Ka arbol_tronco_nml_su.png
+	map_Kd arbol_tronco_dif_su.png
 
 newmtl Leaf01_su_SHD
 	Ns 10.0000
@@ -24,5 +26,5 @@ newmtl Leaf01_su_SHD
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka JA19_Leaf01_nml_su.png
-	map_Kd JA19_Leaf01Back_dif_su.png
+	map_Ka arbol_hoja_nml_su.png
+	map_Kd arbol_hoja_dif_su.png

@@ -3,7 +3,7 @@ illum 4
 Kd 0.141 0.109 0.07
 Ka 0.141 0.109 0.07
 Tf 1.00 1.00 1.00
-map_Kd  ./bricks-texture-design1.jpg
+map_Kd  ./torre.jpg
 Ni 1.00
 newmtl lambert3SG
 illum 4
@@ -34,21 +34,21 @@ illum 4
 Kd  0.141 0.109 0.07
 Ka 0.141 0.109 0.07
 Tf 1.00 1.00 1.00
-map_Kd  ./bricks-texture-design1.jpg
+map_Kd  ./torre.jpg
 Ni 1.00
 newmtl lambert8SG
 illum 4
 Kd 0.141 0.109 0.07
 Ka 0.141 0.109 0.07
 Tf 1.00 1.00 1.00
-map_Kd  ./bricks-texture-design1.jpg
+map_Kd  ./torre.jpg
 Ni 1.00
 newmtl lambert9SG
 illum 4
 Kd 0.141 0.109 0.07
 Ka 0.141 0.109 0.07
 Tf 1.00 1.00 1.00
-map_Kd  ./bricks-texture-design1.jpg
+map_Kd  ./torre.jpg
 Ni 1.00
 newmtl lambert10SG
 illum 4

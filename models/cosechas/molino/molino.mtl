@@ -12,8 +12,8 @@ newmtl windmill_001_base_COL_jpg
 	Kd 0.6980 0.6980 0.6980
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka windmill_001_base_COL.jpg
-	map_Kd windmill_001_base_COL.jpg
+	map_Ka molino_001_base_COL.jpg
+	map_Kd molino_001_base_COL.jpg
 
 newmtl windmill_001_lopatky_COL_jpg
 	Ns 1.3008
@@ -26,5 +26,5 @@ newmtl windmill_001_lopatky_COL_jpg
 	Kd 0.6980 0.6980 0.6980
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka windmill_001_lopatky_COL.jpg
-	map_Kd windmill_001_lopatky_COL.jpg
+	map_Ka molino_001_lopatky_COL.jpg
+	map_Kd molino_001_lopatky_COL.jpg

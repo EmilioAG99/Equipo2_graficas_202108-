@@ -12,5 +12,5 @@ newmtl Scarlet_Snake
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.6300 0.6300 0.6300
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Scarlet_Snake_diffuse.jpg
-	map_Kd Scarlet_Snake_diffuse.jpg
+	map_Ka serpiente.jpg
+	map_Kd serpiente.jpg
