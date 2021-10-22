@@ -68,5 +68,35 @@ La opción de la aplicación para generar nuevos mapas será conformada por las 
 ### Almacenamiento de mapas  
 Los mapas generados ya sean de manera aleatoria o en el modo creador podrán ser guardados para posteriormente ser reusados. Los mapas podrán ser guardados en el local storage para que en otro momento se pueda seleccionar y que sea cargado o puede ser guardado en un archivo de texto que posteriormente puede ser importado y se generará todo lo que se tenía hasta el momento de la exportación del mapa. Una vez que se haya cargado el mapa de cualquiera de los dos métodos antes mencionados se podrá explorar el mapa como se hace al tener un inicial. 
 
-
-
+### Restricciones para creación de mapa  
+* Bosque : La posición puede ser en cualquier hexágono excepto a lado de un desierto
+  * Árboles  
+  * Pasto
+  * Casas
+  * Lobos
+* Ríos: Debe de estar a lado de un bosque o planicie
+  * Puente
+  * Pato de hule
+* Sembradíos: Debe de estar a lado de un bosque o planicie  
+  * Casas
+  * Tiendas
+  * Cosechas
+  * Aldeanos
+  * Caballeros 
+* Lago: Debe de estar a lado de un bosque o planicie  
+  * Puente
+  * Pato de hule
+* Pantano: Debe de estar a lado de un bosque
+  * Cocodrilos
+  * Orcos
+  * Árboles
+* Desierto: Únicamente puede encontrarse a un lado de una planicie
+  * Iguanas
+  * Pirámides
+  * Fortaleza
+* Planicies: Puede ocupar cualquier lugar en los hexágonos
+  * Castillos 
+  * Fortalezas
+  * Dragones
+  * Caballeros 
+  * Hechizeros
