@@ -1,5 +1,6 @@
 # Equipo2_graficas_202108
 # Descripción de Requerimientos y Aspectos a ser incluidos en Map Generator
+## Archivos pesados con LFS por si no cargan los modelos, la entrega esta en la carpeta de ProyectoFinal_PrimerAvance y los modelos se encuentran en modelos.js y modelos.html  
 
 ## Integrantes
 Andrés Barragán Salas - *A01026567*  
