@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Proyecto Final - 1</title>
+		<script src="https://threejs.org/build/three.min.js"></script>
+		<script src="https://threejs.org/build/three.module.js"></script>
+		<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+		<script src="https://threejs.org/examples/js/WebGL.js"></script>
+
+		<script src='https://threejs.org/examples/js/lines/LineSegmentsGeometry.js'></script>
+		<script src='https://threejs.org/examples/js/lines/LineGeometry.js'></script>
+
+		<script src='https://threejs.org/examples/js/lines/LineMaterial.js'></script>
+
+		<script src='https://threejs.org/examples/js/lines/LineSegments2.js'></script>
+		<script src='https://threejs.org/examples/js/lines/Line2.js'></script>
+		<script src='https://threejs.org/examples/js/lines/Wireframe.js'></script>
+
+		<script src='https://threejs.org/examples/js/loaders/ColladaLoader.js'></script>
+		<script src='https://threejs.org/examples/js/loaders/OBJLoader.js'></script>
+		<script src='https://threejs.org/examples/js/effects/OutlineEffect.js'></script>
+
+		<script type="module" defer src="index.js"></script>
+
+		<link rel="stylesheet" href="index.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+	</head>
+	<body> 
+		<div id="container">
+			<canvas id="webglcanvas"></canvas>
+			<button id="default-map-button" onClick="setDefaultMap()">Set default map</button>
+			<div id="tooltip">
+				<form>
+					<h2>Update tile</h2>
+					<p>Tile type:</p>
+					<select name="tiles" id="tiles">
+						<option value="EMPTY">Empty</option>
+						<option value="FOREST0">Forest 1</option>
+						<option value="FOREST1">Forest 2</option>
+						<option value="CIVILIZATION0">Civilization 0</option>
+						<option value="CIVILIZATION1">Civilization 1</option>
+						<option value="CROP">Crop</option>
+					</select>
+					<p>Available roads:</p>
+					<img src="hexagon_reference.png" alt="hexagon reference">
+					<div class="checkbox-container">
+						<input type="checkbox" id="road0" name="road0" value="0">
+						<label for="road0">0</label>
+						<input type="checkbox" id="road1" name="road1" value="1">
+						<label for="road1">1</label>
+						<input type="checkbox" id="road2" name="road2" value="2">
+						<label for="road2">2</label>
+						<input type="checkbox" id="road3" name="road3" value="3">
+						<label for="road3">3</label>
+						<input type="checkbox" id="road4" name="road4" value="4">
+						<label for="road4">4</label>
+						<input type="checkbox" id="road5" name="road5" value="5">
+						<label for="road5">5</label>
+					</div>
+					<input type="button" id="submit-button" value="Update" onClick="handleUpdate(this.form)"></input>
+				</form>
+			</div>
+			<div id="loading-screen" class="active">
+				<h1>Proyecto final: Gráficas Computacionales</h1>
+				<progress id="progress-bar" value="0" max="100">
+			</div>
+		</div>
+	</body>
+
+</html>
